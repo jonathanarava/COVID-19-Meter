@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(gotMessage);
 function gotMessage(message, sender, sendResponse) {
     console.log(message)
 
-    if (message === "moreCOVID") {
+    if (message === "3") {
         console.log("moreCOVID")
         replaceText(document.body)
     }
