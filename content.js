@@ -18,9 +18,10 @@ function replaceText(element) {
 chrome.runtime.onMessage.addListener(gotMessage);
 
 function gotMessage(message, sender, sendResponse) {
-    console.log("msg received")
+    console.log(message)
 
-    if (message !== "moreCOVID") {
+    if (message === "moreCOVID") {
+        console.log("moreCOVID")
         replaceText(document.body)
     }
 }
