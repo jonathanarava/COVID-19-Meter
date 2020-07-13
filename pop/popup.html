@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<script src="popup.js"></script>
+
+<head>
+
+    <h3>
+        Looking for the first available driving test date?
+    </h3>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label>Email Address:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email_address" placeholder="Enter email address" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>License number:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="license_number" pattern="[a-zA-Z]{1}[0-9]{14}" placeholder="Enter License number" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Expiration date:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="expiration_date" placeholder="Enter expiration date" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Location:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="location" placeholder="Enter location">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Exam Class:</label>
+                </div>
+                <br>
+                <div class="col-75">
+                    <select id="license_class_list">
+                        <option value="1">G1</option>
+                        <option value="2">G2</option>
+                        <option value="3">G</option>
+                        <option value="4">M</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="sub">
+        <input type="submit" id="submit_button" value="Find it!">
+    </div>
+</body>
+
+</html>

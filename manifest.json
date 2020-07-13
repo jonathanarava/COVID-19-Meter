@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "(no) more COVID-19",
+    "description": "the option to see more or less of COVID",
+    "version": "0.1",
+    "permissions": ["tabs"],
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>",
+            "http://youtube.com/*",
+            "https://youtube.com/*"
+        ],
+        "js": ["content.js"],
+        "css": ["style.css"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "/images/image.png",
+        "default_title": "(NO) more COVID-19",
+        "default_popup": "/pop/popup.html"
+    }
+}
