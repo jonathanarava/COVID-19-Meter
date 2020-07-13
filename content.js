@@ -19,6 +19,8 @@ chrome.runtime.onMessage.addListener(gotMessage);
 
 function gotMessage(message, sender, sendResponse) {
     console.log(message)
+    console.log(message.status)
+
 
     if (message === "3") {
         console.log("moreCOVID")
