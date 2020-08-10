@@ -24,9 +24,17 @@ function gotMessage(message) {
     console.log(message)
     console.log(message.status)
 
+    switch (message.status){
+        case "0":
+            console.log("Less COVID")
+        case "1":
+            console.log("give it to me as is")
+        case "2":
+            console.log("More COVID")
+            replaceText(document.body)
+        default:
+            console.log(message.status)
 
-    if (message === "3") {
-        console.log("moreCOVID")
-        replaceText(document.body)
     }
+
 }
