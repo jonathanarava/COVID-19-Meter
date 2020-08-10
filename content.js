@@ -20,7 +20,7 @@ function replaceText(element) {
 
 chrome.runtime.onMessage.addListener(gotMessage);
 
-function gotMessage(message, sender, sendResponse) {
+function gotMessage(message) {
     console.log(message)
     console.log(message.status)
 
