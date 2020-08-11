@@ -31,12 +31,10 @@ function max_corona(element, array){
 
  function removeText(element) {  
     if (element.hasChildNodes()) {
-        element.childNodes.forEach(replaceText)
+        element.childNodes.forEach(removeText)
     } else if (element.nodeType === Text.TEXT_NODE) {
         if (element.textContent.match(tag_word)) { //brackets not necessary
-            const newElement = document.createElement('span')
-            newElement.innerHTML = element.textContent.replace(tag_word, '<span class="rainbow">""</span>') //brackets necessary (output: $1)
-            element.replaceWith(newElement)
+            element.parentNode.remove();
             
         }
     }
