@@ -4,7 +4,7 @@
     converts "element" 
 */
 
-tag_words = [/(coronavirus)/gi, /(covid)/gi];
+tag_words = [/(coronavirus)/gi, /(covid-19)/gi];
 
 function replaceText(element) {  
     if (element.hasChildNodes()) {
@@ -12,7 +12,7 @@ function replaceText(element) {
     } else if (element.nodeType === Text.TEXT_NODE) {
         //Coronavirus
         if (element.textContent.match(tag_word)) { //brackets not necessary
-            console.log('%c Match!', 'color: green; font-weight: bold;')
+            //console.log('%c Match!', 'color: green; font-weight: bold;')
             const newElement = document.createElement('span')
             newElement.innerHTML = element.textContent.replace(tag_word, '<span class="rainbow">$1</span>') //brackets necessary (output: $1)
             element.replaceWith(newElement)
