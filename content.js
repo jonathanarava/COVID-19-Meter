@@ -6,6 +6,8 @@
 
 tag_words = [/(coronavirus)/gi, /(covid-19)/gi];
 
+
+
 function replaceText(element) {  
     if (element.hasChildNodes()) {
         element.childNodes.forEach(replaceText)
