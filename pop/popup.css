@@ -10,7 +10,7 @@ textarea {
 }
 
 body {
-    background-color: pink;
+    background-color: rgb(181, 200, 235);
     border-radius: 20px;
 }
 
@@ -22,6 +22,25 @@ body {
     background-color: rgb(155, 236, 205);
     padding: 12px 12px;
 }
+
+#MIN{
+    float:left;
+    width: 33%;
+    text-align: left;
+}
+
+#I{
+    float:left;
+    width: 33%;
+    text-align: center;
+}
+
+#MAX{
+    float:left;
+    width: 33%;
+    text-align: right;
+}
+
 
 
 /* Floating column for labels: 25% width */
