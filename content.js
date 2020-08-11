@@ -3,7 +3,8 @@
 /*
     converts "element" 
 */
-function replaceText(element) {
+function replaceText(element, tag_word) {
+    tag_word = "/(" + tag_word + ")/gi";
     if (element.hasChildNodes()) {
         element.childNodes.forEach(replaceText)
     } else if (element.nodeType === Text.TEXT_NODE) {
@@ -16,6 +17,8 @@ function replaceText(element) {
         }
     }
 }
+
+
 
 
 chrome.runtime.onMessage.addListener(gotMessage);
