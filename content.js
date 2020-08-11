@@ -4,11 +4,11 @@
     converts "element" 
 */
 
-const tag_word = /(coronavirus)/gi;
+tag_words = [/(coronavirus)/gi, /(covid)/gi];
+
 function replaceText(element) {  
     if (element.hasChildNodes()) {
         element.childNodes.forEach(replaceText)
-        console.log(tag_word);
     } else if (element.nodeType === Text.TEXT_NODE) {
         //Coronavirus
         if (element.textContent.match(tag_word)) { //brackets not necessary
@@ -20,6 +20,14 @@ function replaceText(element) {
     }
 }
 
+ function max_corona(element, array){
+    for(i=0; i< array.length; i++){
+        tag_word = array[i];
+        replaceText(element);
+    }
+ }
+
+     
 
 
 
@@ -37,7 +45,7 @@ function gotMessage(message) {
             break;
         case "2":
             //console.log("More COVID")
-            replaceText(document.body)
+            max_corona(document.body,tag_words)
             break;
 
     }
