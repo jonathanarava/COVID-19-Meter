@@ -1,21 +1,73 @@
-input[type=text],
+/* input[type=text],
 select,
 textarea {
-    /* width: 100%; */
-    /* padding: 12px; */
+     width: 100%; 
+     padding: 12px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+} 
+
+ Floating column for labels: 25% width 
+
+.col-25 {
+    float: left;
+    width: 25%; 
+    margin-top: 6px;
 }
 
+
+ Floating column for inputs: 75% width 
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+Clear floats after the columns
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+Style the submit button 
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes change {
+    from {
+        background: grey
+    }
+    to {
+        background: #4CAF50
+    }
+}
+
+input[type=submit]:hover {
+    animation: change 0.5s;
+    background: #4CAF50;
+}
+
+*/
 body {
     background-color: rgb(181, 200, 235);
     border-radius: 20px;
 }
 
 
-/* Style the container */
+/*  Style the container */ 
 
 #container {
     border-radius: 4px;
@@ -41,56 +93,3 @@ body {
     text-align: right;
 }
 
-
-
-/* Floating column for labels: 25% width */
-
-.col-25 {
-    float: left;
-    /* width: 25%; */
-    margin-top: 6px;
-}
-
-
-/* Floating column for inputs: 75% width */
-
-.col-75 {
-    float: left;
-    /* width: 75%; */
-    margin-top: 6px;
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Style the submit button */
-
-input[type=submit] {
-    background-color: grey;
-    color: white;
-    padding: 12px 12px;
-    border-radius: 6px;
-    display: block;
-    margin: 0 auto;
-}
-
-@keyframes change {
-    from {
-        background: grey
-    }
-    to {
-        background: #4CAF50
-    }
-}
-
-input[type=submit]:hover {
-    animation: change 0.5s;
-    background: #4CAF50;
-}

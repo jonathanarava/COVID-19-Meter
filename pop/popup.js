@@ -11,6 +11,14 @@ window.addEventListener('load', function load(event) {
             chrome.tabs.sendMessage(tab_id, data)
             console.log("msg sent")
         })
+
+        container.addEventListener("mouseenter", function(){
+            let data = {status: document.getElementById('options').value}
+            console.log(data.status)
+            console.log(data)
+            chrome.tabs.sendMessage(tab_id, data)
+            console.log("msg sent")
+        })
         
 
     });
