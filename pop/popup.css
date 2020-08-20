@@ -100,7 +100,15 @@ body {
     text-align: right;
 }
 
-.description{
+#min_description{
+    display:none;
+}
+
+#L_description{
+    display:none;
+}
+
+#max_description{
     display:none;
 }
 
