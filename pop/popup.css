@@ -78,6 +78,7 @@ body {
     border-radius: 4px;
     background-color: rgb(155, 236, 205);
     padding: 12px 12px;
+    display: inline-block
 }
 
 #MIN{
