@@ -61,6 +61,10 @@ input[type=submit]:hover {
 }
 
 */
+#title{
+    text-align: center;
+}
+
 body {
     background-color: rgb(181, 200, 235);
     border-radius: 20px;

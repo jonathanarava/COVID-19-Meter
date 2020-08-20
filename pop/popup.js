@@ -12,6 +12,10 @@ window.addEventListener('load', function load(event) {
             console.log("msg sent")
         })
       
+        MIN.addEventListener("mouseenter", function(){
+            
+            console.log("lower")
+        })
 
     });
 
