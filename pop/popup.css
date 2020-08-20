@@ -65,6 +65,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+
 body {
     background-color: rgb(181, 200, 235);
     border-radius: 20px;
@@ -96,5 +97,9 @@ body {
     float:left;
     width: 33%;
     text-align: right;
+}
+
+.description{
+    display:none;
 }
 

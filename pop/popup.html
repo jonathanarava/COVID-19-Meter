@@ -8,21 +8,19 @@
     <h3 id="title">COVID-19 Meter</h3>
 
     <div id="container">
-        <div id="MIN">
-            <span>MIN</span>
-            <!-- <span id="min_description">Withholds COVID</span> -->
-        </div>
-        <div id="I">
-            <span>|</span>
-            <!-- <span id="L_description">..as is..</span> -->
-        </div>
-        <div id="MAX">
-            <span>MAX</span>
-            <!-- <span id="max_description">more COVID</span> -->
+        <div class="labels">
+            <span id="MIN">MIN</span>  
+            <span id="I">|</span>
+            <span id="MAX">MAX</span>
         </div>
         
         <input type="range" id="options" min="0" max="2" value="1" step="1">
-        
+    </div>
+
+    <div class="description">
+        <span id="min_description">Withholds COVID</span>
+        <span id="L_description">..as is..</span>
+        <span id="max_description">more COVID</span>
     </div>
 
 </div>
