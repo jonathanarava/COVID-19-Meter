@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "(no) more COVID-19",
     "description": "the option to see more or less of COVID",
-    "version": "0.1",
+    "version": "1.0",
     "permissions": ["tabs"],
     "content_scripts": [{
         "matches": [
