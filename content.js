@@ -61,6 +61,7 @@ function gotMessage(message) {
             break;
         case "1":
             console.log("give it to me as is")
+            location.reload()
             break;
         case "2":
             console.log("More COVID")
