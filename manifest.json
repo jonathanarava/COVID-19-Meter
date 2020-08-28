@@ -1,14 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "(no) more COVID-19",
+    "manifest_version": 1,
+    "name": "COVID-19 Meter",
     "description": "the option to see more or less of COVID",
     "version": "1.0",
     "permissions": ["tabs"],
     "content_scripts": [{
         "matches": [
-            "<all_urls>",
-            "http://youtube.com/*",
-            "https://youtube.com/*"
+            "<all_urls>"
         ],
         "js": ["content.js"],
         "css": ["style.css"]

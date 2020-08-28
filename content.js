@@ -1,19 +1,19 @@
-//content.js
-
 /*
-    converts "element" 
+content.js : web page 
+
 */
 
+// Keywords to identify on a web page
 tag_words = [/(coronavirus)/gi, /(covid-19)/gi];
 
 
-
+// Replaces tag_word's orginal font with rainbow font
 function replaceText(element) {  
     if (element.hasChildNodes()) {
         element.childNodes.forEach(replaceText)
     } else if (element.nodeType === Text.TEXT_NODE) {
         if (element.textContent.match(tag_word)) { //brackets not necessary
-            //console.log('%c Match!', 'color: green; font-weight: bold;')
+            //testing: console.log('%c Match!', 'color: green; font-weight: bold;')
             const newElement = document.createElement('span')
             newElement.innerHTML = element.textContent.replace(tag_word, '<span class="rainbow">$1</span>') //brackets necessary (output: $1)
             element.replaceWith(newElement)
@@ -21,14 +21,15 @@ function replaceText(element) {
     }
 }
 
-
+// Converts tag_words on the current website to rainbow font
 function max_corona(element, array){
-    for(i=0; i< array.length; i++){
+    for(i=0; i< array.length; i++){ // iterates through all the tag_words
         tag_word = array[i];
-        replaceText(element);
+        replaceText(element);   // converts original font to rainbow font
     }
 }
 
+// Removes tag_word from the website
  function removeText(element) {  
     if (element.hasChildNodes()) {
         element.childNodes.forEach(removeText)
@@ -39,7 +40,8 @@ function max_corona(element, array){
         }
     }
 }
-    
+
+// Removes tag_words from the current website
 function min_corona(element, array){
     for(i=0; i< array.length; i++){
         tag_word = array[i];
