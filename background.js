@@ -1,12 +1,12 @@
 /*
-background.js : background page (browser)
+background.js : background page (browser).
 
 */
 
 console.log("Background running")   
 
 /* 
-Code to Test integration between 'popup' and 'background' (inspect view: background page)
+Code to Test integration between 'popup' and 'background' (inspect view: background page).
 
 chrome.browserAction.onClicked.addListener(buttonClicked)
 
