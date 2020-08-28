@@ -1,13 +1,18 @@
+/*
+popup.js : popup page.
+
+*/
 
 window.addEventListener('load', function load(event) {
     chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {
-        tab_id = tabs[0].id;    // current tab
+        tab_id = tabs[0].id;    // current tab.
 
+        // Listens for selection on slidebar (i.e. more/ less COVID-19).
         options.addEventListener("click", function(){
             let data = {status: document.getElementById('options').value}
             console.log(data.status)
             console.log(data)
-            chrome.tabs.sendMessage(tab_id, data)
+            chrome.tabs.sendMessage(tab_id, data)   // sends user selected preference to 'content.js'.
             console.log("msg sent")
         })
     
