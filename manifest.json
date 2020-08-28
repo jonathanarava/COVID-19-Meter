@@ -1,5 +1,5 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 2,
     "name": "COVID-19 Meter",
     "description": "the option to see more or less of COVID",
     "version": "1.0",
