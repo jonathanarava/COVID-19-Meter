@@ -62,7 +62,7 @@ function gotMessage(message) {
         // MIN case : user wants to see minimum ammount of tag_words on current page.
         case "0":
             console.log("Less COVID")
-            min_corona(document.body,tag_words)
+            min_corona(document.body,tag_words) // removes tag_words from the site.
             break;
 
         // Neutral case : user wants to see the current page unaltered.
@@ -74,7 +74,7 @@ function gotMessage(message) {
         // MAX case : user wants the tag_words to stand out on current page.
         case "2":
             console.log("More COVID")
-            max_corona(document.body,tag_words)
+            max_corona(document.body,tag_words) // replaces tag_words' orginal font with rainbow font
             break;
 
     }
