@@ -68,7 +68,9 @@ function gotMessage(message) {
         // Neutral case : user wants to see the current page unaltered.
         case "1":
             console.log("give it to me as is")
-            location.reload()   // refreshes the page from cache.
+            window.location.reload()   // refreshes the page from cache.
+            // window.location.reload(): refreshes the page from the browser's cache.
+            // location.reload(): refreshes the page (less efficient).
             break;
 
         // MAX case : user wants the tag_words to stand out on current page.
