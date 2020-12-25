@@ -28,12 +28,8 @@ Option | Description
 **MAX** | changes the font style of 'covid' related keywords to dynamic rainbow font.
 
 ### COVID keywords
-List of COVID keywords can be found in the [content.js](https://github.com/jonathanarava/COVID-19-Meter/blob/master/content.js) file. As you can see more keywords can be easily added.
+List of COVID keywords can be found in the [content.js](https://github.com/jonathanarava/COVID-19-Meter/blob/master/content.js#L7) file. As you can see more keywords can be easily added.
 Alternatively, the contents of the tag_words variable can be completely replaced with keywords for some 
 other topic.
-```JS
-  tag_words = [/(coronavirus)/gi, /(covid-19)/gi];
-
-```
   
   
