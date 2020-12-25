@@ -7,7 +7,7 @@ File/Folder | Description
 [manifest.json](COVID-19-Meter/manifest.json) (file) | required file that 'stiches' together the files in the project.
 [style.css](COVID-19-Meter/style.css) style (file) | css file.
 [content.js](COVID-19-Meter/content.js) (file) | code to alter the website itself.
-[background.js](COVID-19-Meter/background.js) (file) | code pertaining to the chrome browser (optional).   
+[background.js](https://github.com/jonathanarava/COVID-19-Meter/blob/master/background.js) (file) | code pertaining to the chrome browser (optional).   
 [pop](COVID-19-Meter/pop) (folder) | holds the JS, HTML and CSS file that renders the pop-up (Figure 2).
 [images](COVID-19-Meter/images) (folder) | COVID-19 browser extention favicon.
 
